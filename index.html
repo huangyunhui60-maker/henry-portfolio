@@ -1,0 +1,371 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Henry · AI 产品经理</title>
+<meta name="description" content="Henry，AI 产品经理。把复杂的技术，变成好用的产品。" />
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+<link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+  <!-- 动态背景层 -->
+  <canvas id="bg-canvas" aria-hidden="true"></canvas>
+  <div class="bg-glow" aria-hidden="true"></div>
+  <div class="bg-grid" aria-hidden="true"></div>
+
+  <!-- 导航 -->
+  <header class="nav" id="nav">
+    <a class="nav__logo" href="#hero">
+      <span class="nav__logo-mark">H</span>
+      <span class="nav__logo-text">Henry<span class="dot">.</span>ai</span>
+    </a>
+    <nav class="nav__links">
+      <a href="#about">关于</a>
+      <a href="#skills">技能</a>
+      <a href="#projects">项目</a>
+      <a href="#experience">经历</a>
+      <a href="#contact" class="nav__cta">找我聊聊</a>
+    </nav>
+    <button class="nav__burger" id="burger" aria-label="菜单" aria-expanded="false">
+      <span></span><span></span><span></span>
+    </button>
+  </header>
+
+  <main>
+    <!-- Hero -->
+    <section class="hero" id="hero">
+      <div class="hero__inner">
+        <p class="hero__badge reveal">
+          <span class="pulse"></span> 目前在探索 AI Agent 与端侧智能
+        </p>
+        <h1 class="hero__title reveal">
+          <span class="grad-text">Henry</span><br />
+          我负责把 AI 的<span class="hero__highlight">可能性</span>，
+          <br class="mobile-br" />翻译成<span class="hero__highlight">产品</span>。
+        </h1>
+        <p class="hero__sub reveal">
+          AI 产品经理 · <span id="typed" class="typed"></span><span class="caret">|</span>
+        </p>
+        <div class="hero__actions reveal">
+          <a href="#projects" class="btn btn--primary">
+            看看我做过什么 <span class="btn__arrow">→</span>
+          </a>
+          <a href="#contact" class="btn btn--ghost">找我聊聊</a>
+        </div>
+        <div class="hero__stats reveal">
+          <div class="stat"><strong data-count="6">0</strong><span>年产品经验</span></div>
+          <div class="stat"><strong data-count="20" data-suffix="+">0</strong><span>落地 AI 功能</span></div>
+          <div class="stat"><strong data-count="3" data-suffix="万+">0</strong><span>累计服务用户</span></div>
+        </div>
+      </div>
+      <div class="hero__scroll reveal">
+        <span>向下滚</span>
+        <span class="hero__scroll-line"></span>
+      </div>
+    </section>
+
+    <!-- About -->
+    <section class="section" id="about">
+      <div class="section__head reveal">
+        <span class="section__tag">01 / 关于我</span>
+        <h2 class="section__title">一个会写 Prompt 的<em>产品经理</em></h2>
+      </div>
+      <div class="about">
+        <div class="about__card reveal">
+          <div class="about__avatar">
+            <div class="about__avatar-inner">H</div>
+          </div>
+          <p class="about__name">Henry</p>
+          <p class="about__role">AI Product Manager</p>
+          <div class="about__tags">
+            <span>LLM 应用</span><span>Agent</span><span>数据驱动</span>
+          </div>
+        </div>
+        <div class="about__text reveal">
+          <p>
+            我不是那种只画原型的产品经理 —— 我能<strong>自己动手写 Demo</strong>，
+            也能和技术同学用同一套语言聊 <code>temperature</code> 和 <code>RAG</code>。
+          </p>
+          <p>
+            过去几年，我一直在做一件事：<strong>把看起来很酷、但用户看不懂的 AI 技术，变成「打开就能用」的产品</strong>。
+            做过对话式助手、做过企业知识库、也踩过无数「模型很好但没人用」的坑。
+          </p>
+          <p>
+            我相信好的 AI 产品应该是<strong>安静的</strong> —— 用户不会说"这个 AI 好厉害"，
+            而是会说"这事儿本来就该这么办"。
+          </p>
+          <p class="about__quote">
+            "先让用户成功，再让模型出彩。"
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Skills -->
+    <section class="section" id="skills">
+      <div class="section__head reveal">
+        <span class="section__tag">02 / 技能</span>
+        <h2 class="section__title">我的<em>武器库</em></h2>
+        <p class="section__desc">左边是硬技能，右边是我日常真正在用的工具。</p>
+      </div>
+      <div class="skills">
+        <div class="skills__bars reveal">
+          <div class="bar" data-level="92">
+            <div class="bar__top"><span>AI 产品设计 / LLM 应用</span><span class="bar__val">92%</span></div>
+            <div class="bar__track"><div class="bar__fill"></div></div>
+          </div>
+          <div class="bar" data-level="88">
+            <div class="bar__top"><span>Prompt 工程 & 评测体系</span><span class="bar__val">88%</span></div>
+            <div class="bar__track"><div class="bar__fill"></div></div>
+          </div>
+          <div class="bar" data-level="85">
+            <div class="bar__top"><span>数据分析 / 实验设计</span><span class="bar__val">85%</span></div>
+            <div class="bar__track"><div class="bar__fill"></div></div>
+          </div>
+          <div class="bar" data-level="80">
+            <div class="bar__top"><span>用户研究 / 需求洞察</span><span class="bar__val">80%</span></div>
+            <div class="bar__track"><div class="bar__fill"></div></div>
+          </div>
+          <div class="bar" data-level="72">
+            <div class="bar__top"><span>前端原型 / 快速验证</span><span class="bar__val">72%</span></div>
+            <div class="bar__track"><div class="bar__fill"></div></div>
+          </div>
+        </div>
+        <div class="skills__tools reveal">
+          <div class="tool-group">
+            <h4>AI / 模型</h4>
+            <div class="chips">
+              <span class="chip">GPT-4o</span><span class="chip">Claude</span>
+              <span class="chip">Gemini</span><span class="chip">LangChain</span>
+              <span class="chip">RAG</span><span class="chip">Agent</span>
+              <span class="chip">Fine-tuning</span>
+            </div>
+          </div>
+          <div class="tool-group">
+            <h4>产品 / 协作</h4>
+            <div class="chips">
+              <span class="chip">Figma</span><span class="chip">Axure</span>
+              <span class="chip">Jira</span><span class="chip">禅道</span>
+              <span class="chip">Notion</span>
+            </div>
+          </div>
+          <div class="tool-group">
+            <h4>数据 / 技术</h4>
+            <div class="chips">
+              <span class="chip">SQL</span><span class="chip">Python</span>
+              <span class="chip">A/B Test</span><span class="chip">Mixpanel</span>
+              <span class="chip">GrowingIO</span><span class="chip">HTML/CSS/JS</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Projects -->
+    <section class="section" id="projects">
+      <div class="section__head reveal">
+        <span class="section__tag">03 / 项目</span>
+        <h2 class="section__title">做过的<em>一些事</em></h2>
+        <p class="section__desc">点击卡片可以展开更多细节。</p>
+      </div>
+      <div class="projects" id="projects-grid">
+        <article class="project reveal" data-accent="violet">
+          <div class="project__glow"></div>
+          <div class="project__head">
+            <span class="project__emoji">🤖</span>
+            <span class="project__type">AI Agent</span>
+          </div>
+          <h3 class="project__title">企业知识助手「小知」</h3>
+          <p class="project__summary">
+            让一个几百人的公司，用聊天的方式找到任何内部文档。上线后重复提问量下降 60%。
+          </p>
+          <div class="project__more">
+            <p><strong>我的角色：</strong>从 0 到 1 定义产品形态，设计检索 + 引用溯源机制。</p>
+            <p><strong>关键决策：</strong>放弃"全知全能"，先做深垂直场景，保证答案可溯源。</p>
+            <ul class="project__metrics">
+              <li><span>60%</span>重复提问下降</li>
+              <li><span>4.6/5</span>用户满意度</li>
+              <li><span>3 周</span>MVP 上线</li>
+            </ul>
+          </div>
+          <div class="project__tags"><span>RAG</span><span>Prompt 设计</span><span>0→1</span></div>
+          <button class="project__toggle">展开详情 <span>+</span></button>
+        </article>
+
+        <article class="project reveal" data-accent="cyan">
+          <div class="project__glow"></div>
+          <div class="project__head">
+            <span class="project__emoji">✍️</span>
+            <span class="project__type">创作工具</span>
+          </div>
+          <h3 class="project__title">AI 写作工作台「墨匣」</h3>
+          <p class="project__summary">
+            面向内容团队的协作式写作工具，把"生成"和"人改"缝进同一个流程里。
+          </p>
+          <div class="project__more">
+            <p><strong>我的角色：</strong>负责编辑器交互设计与模型策略调优。</p>
+            <p><strong>关键决策：</strong>不做"一键生成全文"，而是做"逐段协作"，保留作者控制感。</p>
+            <ul class="project__metrics">
+              <li><span>2.3x</span>出稿效率</li>
+              <li><span>78%</span>留存率</li>
+              <li><span>1.2 万</span>周活用户</li>
+            </ul>
+          </div>
+          <div class="project__tags"><span>交互设计</span><span>LLM 调优</span><span>增长</span></div>
+          <button class="project__toggle">展开详情 <span>+</span></button>
+        </article>
+
+        <article class="project reveal" data-accent="violet">
+          <div class="project__glow"></div>
+          <div class="project__head">
+            <span class="project__emoji">📊</span>
+            <span class="project__type">数据平台</span>
+          </div>
+          <h3 class="project__title">对话式数据问答</h3>
+          <p class="project__summary">
+            「用一句话问数据」—— 把 BI 报告变成对话，让业务同学不用再找分析师。
+          </p>
+          <div class="project__more">
+            <p><strong>我的角色：</strong>定义 NL2SQL 的准确率评估标准与兜底策略。</p>
+            <p><strong>关键决策：</strong>准确率不够时，主动"承认不知道"而不是编答案。</p>
+            <ul class="project__metrics">
+              <li><span>89%</span>查询准确率</li>
+              <li><span>50%</span>分析师工时节省</li>
+              <li><span>2000+</span>日查询量</li>
+            </ul>
+          </div>
+          <div class="project__tags"><span>NL2SQL</span><span>评测体系</span><span>B 端</span></div>
+          <button class="project__toggle">展开详情 <span>+</span></button>
+        </article>
+
+        <article class="project reveal" data-accent="cyan">
+          <div class="project__glow"></div>
+          <div class="project__head">
+            <span class="project__emoji">🧪</span>
+            <span class="project__type">个人实验</span>
+          </div>
+          <h3 class="project__title">Agentic 小工具合集</h3>
+          <p class="project__summary">
+            周末折腾出来的自动化小玩意儿：日报生成、会议纪要整理、竞品监控。
+          </p>
+          <div class="project__more">
+            <p><strong>我的角色：</strong>独立开发，从前端到 Prompt 全部自己来。</p>
+            <p><strong>关键决策：</strong>用最小成本验证想法，能跑通就先上线给同事用。</p>
+            <ul class="project__metrics">
+              <li><span>5 个</span>内部工具</li>
+              <li><span>~10h</span>每周省下工时</li>
+              <li><span>∞</span>折腾的快乐</li>
+            </ul>
+          </div>
+          <div class="project__tags"><span>Side Project</span><span>Automation</span><span>全栈</span></div>
+          <button class="project__toggle">展开详情 <span>+</span></button>
+        </article>
+      </div>
+    </section>
+
+    <!-- Experience -->
+    <section class="section" id="experience">
+      <div class="section__head reveal">
+        <span class="section__tag">04 / 经历</span>
+        <h2 class="section__title">走过的<em>路</em></h2>
+      </div>
+      <div class="timeline">
+        <div class="tl-item reveal">
+          <div class="tl-dot"></div>
+          <span class="tl-time">2023 — 至今</span>
+          <h3>某科技公司 · 高级 AI 产品经理</h3>
+          <p>负责 AI 产品线整体规划，主导 3 条产品从 0 到 1，搭建团队 Prompt 评测规范。</p>
+        </div>
+        <div class="tl-item reveal">
+          <div class="tl-dot"></div>
+          <span class="tl-time">2021 — 2023</span>
+          <h3>某互联网公司 · AI 产品经理</h3>
+          <p>从搜索推荐切入 AI 方向，负责智能问答与内容理解模块，服务日活百万级产品。</p>
+        </div>
+        <div class="tl-item reveal">
+          <div class="tl-dot"></div>
+          <span class="tl-time">2019 — 2021</span>
+          <h3>某创业公司 · 产品经理</h3>
+          <p>早期成员，一人扛起从需求到上线，学会了在资源有限时怎么做出取舍。</p>
+        </div>
+        <div class="tl-item reveal">
+          <div class="tl-dot"></div>
+          <span class="tl-time">2019</span>
+          <h3>某大学 · 计算机相关专业</h3>
+          <p>混过实验室，写过爬虫，最后发现比起写代码，我更喜欢琢磨"该做什么"。</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact -->
+    <section class="section section--contact" id="contact">
+      <div class="contact reveal">
+        <span class="section__tag">05 / 联系</span>
+        <h2 class="contact__title">有想法？<span class="grad-text">聊两句。</span></h2>
+        <p class="contact__desc">
+          不管是 AI 产品合作、职业机会，还是单纯想吐槽某个难用的 AI 产品，都欢迎。
+        </p>
+        <div class="contact__actions">
+          <button class="btn btn--primary" id="chat-launch">
+            🤖 和 AI 版的我聊聊
+          </button>
+          <a class="btn btn--ghost" href="mailto:henry@example.com">
+            ✉️ henry@example.com
+          </a>
+          <button class="btn btn--ghost" id="copy-btn" data-copy="henry@example.com">
+            复制邮箱
+          </button>
+        </div>
+        <div class="contact__links">
+          <a href="#" class="social" aria-label="GitHub">
+            <svg viewBox="0 0 24 24" width="20" height="20"><path fill="currentColor" d="M12 .5C5.7.5.5 5.7.5 12c0 5 3.3 9.3 7.8 10.8.6.1.8-.2.8-.6v-2c-3.2.7-3.9-1.5-3.9-1.5-.5-1.3-1.3-1.7-1.3-1.7-1-.7.1-.7.1-.7 1.1.1 1.7 1.2 1.7 1.2 1 1.7 2.6 1.2 3.3.9.1-.7.4-1.2.7-1.5-2.6-.3-5.3-1.3-5.3-5.8 0-1.3.5-2.3 1.2-3.1-.1-.3-.5-1.5.1-3.1 0 0 1-.3 3.3 1.2a11.5 11.5 0 016 0C17.6 4.3 18.6 4.6 18.6 4.6c.6 1.6.2 2.8.1 3.1.8.8 1.2 1.8 1.2 3.1 0 4.5-2.7 5.5-5.3 5.8.4.4.8 1.1.8 2.2v3.3c0 .3.2.7.8.6 4.5-1.5 7.8-5.8 7.8-10.8C23.5 5.7 18.3.5 12 .5z"/></svg>
+            <span>GitHub</span>
+          </a>
+          <a href="#" class="social" aria-label="小红书">
+            <svg viewBox="0 0 24 24" width="20" height="20"><path fill="currentColor" d="M4 3h16a1 1 0 011 1v16a1 1 0 01-1 1H4a1 1 0 01-1-1V4a1 1 0 011-1zm3 4v3.5c0 1 .5 1.5 1.3 1.5H10v-2H9v-.7h2.5V14c0 1.4-.8 2.2-2.2 2.2H8.5l-.4-1.7c.3.1.6.2.9.2.7 0 1-.4 1-1.1V12H6.6c-1 0-1.6-.6-1.6-1.7V7h2zm8 0h2v4.5h2V7h2v9.5h-2v-3.4h-2v3.4h-2V7z"/></svg>
+            <span>小红书</span>
+          </a>
+          <a href="#" class="social" aria-label="即刻">
+            <svg viewBox="0 0 24 24" width="20" height="20"><path fill="currentColor" d="M12 2l3.1 6.3 6.9 1-5 4.9 1.2 6.9L12 17.8 5.8 21l1.2-6.9-5-4.9 6.9-1z"/></svg>
+            <span>即刻</span>
+          </a>
+          <button class="social social--egg" id="egg-btn" aria-label="彩蛋">
+            <span id="egg-face">🙂</span>
+            <span id="egg-label">点我</span>
+          </button>
+        </div>
+      </div>
+      <footer class="footer">
+        <p>© <span id="year"></span> Henry · 用 HTML / CSS / JS 手搓，没有框架，也没有加班到凌晨（大概）。</p>
+      </footer>
+    </section>
+  </main>
+
+  <div class="toast" id="toast" role="status" aria-live="polite"></div>
+
+  <!-- Dify 智能问答助手 -->
+  <script>
+    window.difyChatbotConfig = {
+      token: '8V6DolaXB0Ygz69f',
+      baseUrl: 'https://udify.app',
+      inputs: {
+        // 在这里定义 Start 节点的输入变量（key 为变量名）
+      },
+      systemVariables: {
+        // user_id: '在此定义用户 ID',
+        // conversation_id: '在此定义会话 ID，必须是合法的 UUID',
+      },
+      userVariables: {
+        // avatar_url: '在此定义用户头像 URL',
+        // name: '在此定义用户名称',
+      },
+    }
+  </script>
+  <script src="https://udify.app/embed.min.js" id="8V6DolaXB0Ygz69f" defer></script>
+
+  <script src="js/main.js"></script>
+</body>
+</html>
