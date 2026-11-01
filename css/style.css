@@ -723,6 +723,46 @@ code {
   color: var(--text-dim);
 }
 
+.project__links {
+  display: flex;
+  gap: 10px;
+}
+
+.project__link {
+  flex: 1;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 11px 16px;
+  border-radius: 11px;
+  background: var(--surface);
+  border: 1px solid var(--border);
+  color: var(--text-dim);
+  font-size: .87rem;
+  font-weight: 600;
+  transition: background .25s, color .25s, border-color .25s, transform .22s, filter .25s;
+}
+
+.project__link:hover {
+  background: var(--surface-2);
+  color: var(--text);
+  border-color: rgba(34, 211, 238, .4);
+  transform: translateY(-2px);
+}
+
+.project__link--demo {
+  background: var(--grad);
+  color: #08080f;
+  border-color: transparent;
+  box-shadow: 0 8px 24px rgba(124, 58, 237, .28);
+}
+
+.project__link--demo:hover {
+  color: #08080f;
+  border-color: transparent;
+  filter: brightness(1.08);
+}
+
 .project__toggle {
   width: 100%;
   display: flex;

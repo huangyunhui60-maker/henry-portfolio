@@ -169,99 +169,58 @@
       <div class="section__head reveal">
         <span class="section__tag">03 / 项目</span>
         <h2 class="section__title">做过的<em>一些事</em></h2>
-        <p class="section__desc">点击卡片可以展开更多细节。</p>
+        <p class="section__desc">三个可直接打开的独立 Demo，纯前端。</p>
       </div>
       <div class="projects" id="projects-grid">
         <article class="project reveal" data-accent="violet">
           <div class="project__glow"></div>
           <div class="project__head">
-            <span class="project__emoji">🤖</span>
-            <span class="project__type">AI Agent</span>
+            <span class="project__emoji">📊</span>
+            <span class="project__type">评测台</span>
           </div>
-          <h3 class="project__title">企业知识助手「小知」</h3>
+          <h3 class="project__title">广告 Agent 评测台</h3>
           <p class="project__summary">
-            让一个几百人的公司，用聊天的方式找到任何内部文档。上线后重复提问量下降 60%。
+            对比多套投放 Agent；win-rate / 引用覆盖 / 合规闸门；3 天迭代复盘与 CSV 导出。纯前端、无 API Key。
           </p>
-          <div class="project__more">
-            <p><strong>我的角色：</strong>从 0 到 1 定义产品形态，设计检索 + 引用溯源机制。</p>
-            <p><strong>关键决策：</strong>放弃"全知全能"，先做深垂直场景，保证答案可溯源。</p>
-            <ul class="project__metrics">
-              <li><span>60%</span>重复提问下降</li>
-              <li><span>4.6/5</span>用户满意度</li>
-              <li><span>3 周</span>MVP 上线</li>
-            </ul>
+          <div class="project__tags"><span>win-rate</span><span>引用覆盖</span><span>合规闸门</span></div>
+          <div class="project__links">
+            <a class="project__link project__link--demo" href="https://henryhwang-ai.github.io/ad-agent-eval-lab/" target="_blank" rel="noopener noreferrer">Demo</a>
+            <a class="project__link" href="https://github.com/HenryHwang-AI/ad-agent-eval-lab" target="_blank" rel="noopener noreferrer">GitHub</a>
           </div>
-          <div class="project__tags"><span>RAG</span><span>Prompt 设计</span><span>0→1</span></div>
-          <button class="project__toggle">展开详情 <span>+</span></button>
         </article>
 
         <article class="project reveal" data-accent="cyan">
           <div class="project__glow"></div>
           <div class="project__head">
-            <span class="project__emoji">✍️</span>
-            <span class="project__type">创作工具</span>
+            <span class="project__emoji">🔗</span>
+            <span class="project__type">行业 RAG</span>
           </div>
-          <h3 class="project__title">AI 写作工作台「墨匣」</h3>
+          <h3 class="project__title">引溯 · 带引用的行业 RAG 顾问</h3>
           <p class="project__summary">
-            面向内容团队的协作式写作工具，把"生成"和"人改"缝进同一个流程里。
+            本地 BM25 检索广告 SOP/合规知识库；编号引用可点开原文；库外问题拒答。纯前端。
           </p>
-          <div class="project__more">
-            <p><strong>我的角色：</strong>负责编辑器交互设计与模型策略调优。</p>
-            <p><strong>关键决策：</strong>不做"一键生成全文"，而是做"逐段协作"，保留作者控制感。</p>
-            <ul class="project__metrics">
-              <li><span>2.3x</span>出稿效率</li>
-              <li><span>78%</span>留存率</li>
-              <li><span>1.2 万</span>周活用户</li>
-            </ul>
+          <div class="project__tags"><span>BM25</span><span>引用溯源</span><span>拒答</span></div>
+          <div class="project__links">
+            <a class="project__link project__link--demo" href="https://henryhwang-ai.github.io/citation-rag-advisor/" target="_blank" rel="noopener noreferrer">Demo</a>
+            <a class="project__link" href="https://github.com/HenryHwang-AI/citation-rag-advisor" target="_blank" rel="noopener noreferrer">GitHub</a>
           </div>
-          <div class="project__tags"><span>交互设计</span><span>LLM 调优</span><span>增长</span></div>
-          <button class="project__toggle">展开详情 <span>+</span></button>
         </article>
 
         <article class="project reveal" data-accent="violet">
           <div class="project__glow"></div>
           <div class="project__head">
-            <span class="project__emoji">📊</span>
-            <span class="project__type">数据平台</span>
+            <span class="project__emoji">🎯</span>
+            <span class="project__type">多 Agent</span>
           </div>
-          <h3 class="project__title">对话式数据问答</h3>
+          <h3 class="project__title">多 Agent 投放作战室</h3>
           <p class="project__summary">
-            「用一句话问数据」—— 把 BI 报告变成对话，让业务同学不用再找分析师。
+            洞察→创意→人工闸门→合规→实验任务包；可注入合规失败回环。纯前端。
           </p>
-          <div class="project__more">
-            <p><strong>我的角色：</strong>定义 NL2SQL 的准确率评估标准与兜底策略。</p>
-            <p><strong>关键决策：</strong>准确率不够时，主动"承认不知道"而不是编答案。</p>
-            <ul class="project__metrics">
-              <li><span>89%</span>查询准确率</li>
-              <li><span>50%</span>分析师工时节省</li>
-              <li><span>2000+</span>日查询量</li>
-            </ul>
+          <div class="project__tags"><span>洞察</span><span>合规闸门</span><span>实验</span></div>
+          <div class="project__links">
+            <a class="project__link project__link--demo" href="https://henryhwang-ai.github.io/multi-agent-ad-war-room/" target="_blank" rel="noopener noreferrer">Demo</a>
+            <a class="project__link" href="https://github.com/HenryHwang-AI/multi-agent-ad-war-room" target="_blank" rel="noopener noreferrer">GitHub</a>
           </div>
-          <div class="project__tags"><span>NL2SQL</span><span>评测体系</span><span>B 端</span></div>
-          <button class="project__toggle">展开详情 <span>+</span></button>
-        </article>
-
-        <article class="project reveal" data-accent="cyan">
-          <div class="project__glow"></div>
-          <div class="project__head">
-            <span class="project__emoji">🧪</span>
-            <span class="project__type">个人实验</span>
-          </div>
-          <h3 class="project__title">Agentic 小工具合集</h3>
-          <p class="project__summary">
-            周末折腾出来的自动化小玩意儿：日报生成、会议纪要整理、竞品监控。
-          </p>
-          <div class="project__more">
-            <p><strong>我的角色：</strong>独立开发，从前端到 Prompt 全部自己来。</p>
-            <p><strong>关键决策：</strong>用最小成本验证想法，能跑通就先上线给同事用。</p>
-            <ul class="project__metrics">
-              <li><span>5 个</span>内部工具</li>
-              <li><span>~10h</span>每周省下工时</li>
-              <li><span>∞</span>折腾的快乐</li>
-            </ul>
-          </div>
-          <div class="project__tags"><span>Side Project</span><span>Automation</span><span>全栈</span></div>
-          <button class="project__toggle">展开详情 <span>+</span></button>
         </article>
       </div>
     </section>
